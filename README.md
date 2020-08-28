@@ -5,6 +5,12 @@ Plugin for simple switch kubernetes contexts and namespaces
 ## Example usage
 
 ```bash
+# kubectl use l
+CURRENT   NAME          CLUSTER       AUTHINFO              NAMESPACE
+          dev           dev-cluster   admin                 monitor
+          beta          beta-cluster  admin                 monitor
+*         prod          prod-cluster  developer             monitor
+
 # kubectl use prod
 Switched to context "prod".
 
@@ -19,7 +25,7 @@ Switched to namespace "kube-system".
 ## Installation
 
 ```
-curl -LO https://github.com/kvaps/kubectl-use/raw/master/kubectl-use
+curl -LO https://github.com/SabaPing/kubectl-use/raw/master/kubectl-use
 chmod +x ./kubectl-use
 sudo mv ./kubectl-use /usr/local/bin/kubectl-use
 ```
